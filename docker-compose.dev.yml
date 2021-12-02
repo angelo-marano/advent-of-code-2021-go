@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  advent:
+    container_name: "advent_2021"
+    build:
+      context: ./.devcontainer
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/workspace
